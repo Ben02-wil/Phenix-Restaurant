@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phenix Bar & Restaurant - Une expérience gastronomique unique avec concerts, cocktails et cuisine raffinée.">
+    <title>Phenix Bar & Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">PHENIX</div>
+            
+            <!-- Hamburger Menu Toggle -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link" onclick="closeMenu()">Accueil</a></li>
+                    <li><a href="#services" class="nav-link" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#menu" class="nav-link" onclick="closeMenu()">Menu</a></li>
+                    <li><a href="#events" class="nav-link" onclick="closeMenu()">Événements</a></li>
+                    <li><a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="reserve-btn" onclick="scrollToReservation()">Réserver</button>
+        </div>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenue chez Phenix</h1>
+            <p class="hero-description">Une expérience gastronomique unique dans un cadre élégant et convivial. Découvrez nos créations culinaires et nos événements exceptionnels.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToReservation()">Réserver une Table</button>
+                <button class="btn btn-secondary" onclick="scrollToMenu()">Découvrir le Menu</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="section-container">
+            <h2 class="section-title">Nos Services</h2>
+            <p class="section-subtitle">Profitez de nos multiples options de service</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Sur Place</h3>
+                    <p>Repas dans notre élégant restaurant avec service attentionné</p>
+                </div>
+                <div class="service-card">
+                    <h3>Drive</h3>
+                    <p>Commandez et récupérez rapidement vos plats</p>
+                </div>
+                <div class="service-card">
+                    <h3>Livraison</h3>
+                    <p>Livraison à domicile rapide et sécurisée</p>
+                </div>
+                <div class="service-card">
+                    <h3>À Emporter</h3>
+                    <p>Commandez et emportez vos plats favoris</p>
+                </div>
+                <div class="service-card">
+                    <h3>Terrasse</h3>
+                    <p>Profitez de notre splendide terrasse en toute saison</p>
+                </div>
+                <div class="service-card">
+                    <h3>Événements Privés</h3>
+                    <p>Organisez vos réceptions dans notre établissement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS SECTION -->
+    <section class="highlights-section">
+        <div class="section-container">
+            <h2 class="section-title">Nos Points Forts</h2>
+            <p class="section-subtitle">Découvrez ce qui rend Phenix unique</p>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>Concerts Live</h3>
+                    <p>Musique en direct tous les week-ends avec les meilleurs artistes</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Cuisine Raffinée</h3>
+                    <p>Créations exclusives de nos chefs expérimentés</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Ambiance Élégante</h3>
+                    <p>Décor moderne et atmosphère conviviale garantie</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Service Premium</h3>
+                    <p>Équipe professionnelle dédiée à votre satisfaction</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Toit Terrasse</h3>
+                    <p>Vue panoramique sur la ville pour un moment inoubliable</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Événements Spéciaux</h3>
+                    <p>Soirées thématiques et animations régulières</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+        <div class="section-container">
+            <h2 class="section-title">Notre Carte</h2>
+            <p class="section-subtitle">Découvrez nos spécialités</p>
+
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Cocktails et Apéritifs</h3>
+                    <p>Découvrez nos créations exclusives et signature</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Plats Gourmands</h3>
+                    <p>Cuisine raffinée préparée avec passion et qualité</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Bières Artisanales</h3>
+                    <p>Sélection de bières du monde entier</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Vins Fins</h3>
+                    <p>Sélection de vins prestigieux et de qualité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="events-section">
+        <div class="section-container">
+            <h2 class="section-title">Événements à Venir</h2>
+            <p class="section-subtitle">Consultez nos événements spéciaux</p>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-day">VEN</span>
+                        <span class="event-date">20</span>
+                    </div>
+                    <div class="event-body">
+                        <h3>Concert Live Jazz</h3>
+                        <p>Découvrez les meilleurs musiciens de jazz en direct</p>
+                        <span class="event-time">20h00 - 23h00</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-day">SAM</span>
+                        <span class="event-date">21</span>
+                    </div>
+                    <div class="event-body">
+                        <h3>Soirée Spéciale</h3>
+                        <p>Animations et spectacles pour une soirée inoubliable</p>
+                        <span class="event-time">21h00 - 01h00</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-day">DIM</span>
+                        <span class="event-date">22</span>
+                    </div>
+                    <div class="event-body">
+                        <h3>Brunch Dominical</h3>
+                        <p>Savourez notre brunch gourmand en famille</p>
+                        <span class="event-time">10h00 - 15h00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Réserver ou Commander</h2>
+            <p class="section-subtitle">Contactez-nous pour votre prochaine visite</p>
+            
+            <div class="contact-grid">
+                <a href="tel:+243995054743" class="contact-card">
+                    <h3>Téléphone</h3>
+                    <p>+243 (99) 5054743</p>
+                    <span class="contact-action">Appeler Maintenant</span>
+                </a>
+
+                <a href="https://wa.me/243995054743" target="_blank" class="contact-card">
+                    <h3>WhatsApp</h3>
+                    <p>Chat en direct avec nous</p>
+                    <span class="contact-action">Envoyer un Message</span>
+                </a>
+
+                <a href="#" class="contact-card" onclick="alert('Formulaire en développement'); return false;">
+                    <h3>Formulaire</h3>
+                    <p>Remplissez notre formulaire de réservation</p>
+                    <span class="contact-action">Réserver en Ligne</span>
+                </a>
+            </div>
+
+            <div class="info-section">
+                <div class="info-item">
+                    <h4>Adresse</h4>
+                    <p>Kinshasa, République Démocratique du Congo</p>
+                </div>
+                <div class="info-item">
+                    <h4>Horaires</h4>
+                    <p>Ouvert tous les jours de 08h00 à 00h00</p>
+                </div>
+                <div class="info-item">
+                    <h4>Téléphone</h4>
+                    <p>+243 (99) 5054743</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Phenix Bar & Restaurant</h4>
+                <p>Une expérience gastronomique unique avec une cuisine raffinée, des événements inoubliables et un service premium.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#events">Événements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Nous Suivre</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Phenix Bar & Restaurant. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
